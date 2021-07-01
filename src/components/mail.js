@@ -1,13 +1,14 @@
 
 import {Link} from "react-router-dom"
 import clsx from 'clsx';
+import axios from "axios"
 import Typewriter from 'typewriter-effect';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import HomeIcon from '@material-ui/icons/Home';
 import FaceIcon from '@material-ui/icons/Face';
 import DraftsIcon from '@material-ui/icons/Drafts';
 import TextareaAutosize from '@material-ui/core/TextareaAutosize';
-
+import {useState} from "react"
 import Drawer from '@material-ui/core/Drawer';
 import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
@@ -140,12 +141,26 @@ const useStyles = makeStyles((theme) => ({
   }));
   
 const Contact = () => {
+  const [message, setMessage] = useState("")
+  const [email, setEmail] = useState("")
 
     const [state, setState] = React.useState({
 
         bottom: false,
       
       });
+
+      const submit = (e) => {
+           e.preventDefault()
+
+           const dataToSubmit = {
+             message,
+              email
+           }
+       axios.post("/api/sendMail", dataToSubmit)
+      
+        
+      }
       const toggleDrawer = (anchor, open) => (event) => {
         if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
           return;
@@ -210,7 +225,8 @@ const Contact = () => {
  
 
  
-<main>
+<main className="mainn">
+
 <Container component="main" maxWidth="xs">
       <CssBaseline />
       <div className={classes.paper}>
@@ -219,6 +235,7 @@ const Contact = () => {
         Contact Form
         </Typography>
         <form className={classes.form} noValidate>
+        <div className="textFieldss">
           <TextField
             variant="outlined"
             margin="normal"
@@ -229,15 +246,27 @@ const Contact = () => {
             name="email"
             autoComplete="email"
             autoFocus
+            onChange={e => {setEmail(e.target.value)}}
           />
-         <TextareaAutosize  variant="outlined"
+          </div>
+          <div className="textFieldss">
+         <TextField
+            variant="outlined"
             margin="normal"
-            Width="100px"
-            id="email"
-            label="Email Address"
-            name="email"
-            autoComplete="email"
-            autoFocus />
+           
+            required
+            fullWidth
+            label="Message"
+            id="outlined-size-normal"
+            
+            name="Text"
+            autoComplete="Text"
+            autoFocus
+            size="big"
+            onChange={e => {setMessage(e.target.value)}}
+          />
+          </div>
+       
 
           <Button
             type="submit"
@@ -245,6 +274,7 @@ const Contact = () => {
             variant="contained"
             color="primary"
             className={classes.submit}
+            onClick={submit}
           >
             Submit
           </Button>

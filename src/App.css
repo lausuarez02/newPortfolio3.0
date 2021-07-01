@@ -9,6 +9,12 @@
 .me{
   margin-left:70%;
 }
+.textFieldss{
+  width: 120%;
+}
+.mainn{
+  margin-left:0%
+}
 .textAboutMe{
   margin-top: -20%;
   font-size: 50px;
@@ -17,6 +23,12 @@
 
 
 @media only screen and (max-width: 800px) {
+  .mainn{
+    margin-left:0%
+  }
+  .textFieldss{
+    width: 90%;
+  }
   .containerPrincipal{
     box-shadow: 40px 30px #457b9d;width:85%; padding-bottom:80px
   }
