@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import { HashRouter as Router, Switch, Route } from "react-router-dom"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+//importing components
+import Body from "./components/body";
+import Contact from "./components/mail"
+//import Me from "./components/me"
+
+const App = () => {
+  return(
+     <Router>
+       <Switch>
+         <Route exact path="/" component={Body}/>
+        {/* <Route exact path="/me" component={Me}/>*/}
+        <Route exact path="/ContactMe" component={Contact}/>
+       </Switch>
+     </Router>
+  )
 }
 
 export default App;
