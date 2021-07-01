@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/newPortfolio3.0/static/css/main.3efb20b0.chunk.css",
+    "main.js": "/newPortfolio3.0/static/js/main.0fb57e38.chunk.js",
+    "main.js.map": "/newPortfolio3.0/static/js/main.0fb57e38.chunk.js.map",
+    "runtime-main.js": "/newPortfolio3.0/static/js/runtime-main.f52a6021.js",
+    "runtime-main.js.map": "/newPortfolio3.0/static/js/runtime-main.f52a6021.js.map",
+    "static/js/2.4ca1f464.chunk.js": "/newPortfolio3.0/static/js/2.4ca1f464.chunk.js",
+    "static/js/2.4ca1f464.chunk.js.map": "/newPortfolio3.0/static/js/2.4ca1f464.chunk.js.map",
+    "static/js/3.38954e2b.chunk.js": "/newPortfolio3.0/static/js/3.38954e2b.chunk.js",
+    "static/js/3.38954e2b.chunk.js.map": "/newPortfolio3.0/static/js/3.38954e2b.chunk.js.map",
+    "index.html": "/newPortfolio3.0/index.html",
+    "static/css/main.3efb20b0.chunk.css.map": "/newPortfolio3.0/static/css/main.3efb20b0.chunk.css.map",
+    "static/js/2.4ca1f464.chunk.js.LICENSE.txt": "/newPortfolio3.0/static/js/2.4ca1f464.chunk.js.LICENSE.txt",
+    "static/media/b8289c2-removebg-preview.7ce71a73.png": "/newPortfolio3.0/static/media/b8289c2-removebg-preview.7ce71a73.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f52a6021.js",
+    "static/js/2.4ca1f464.chunk.js",
+    "static/css/main.3efb20b0.chunk.css",
+    "static/js/main.0fb57e38.chunk.js"
+  ]
+}
