@@ -45,8 +45,6 @@ import MenuIcon from '@material-ui/icons/Menu';
 import MoreIcon from '@material-ui/icons/MoreVert';
 
 import me from "../images/b8289c2-removebg-preview.png"
-import MyPDF from '../ResumeLautaroS.pdf';
-
 
 function Copyright() {
 
@@ -250,11 +248,11 @@ options={{
               <Grid container spacing={2} justify="left" className="resume" style={{marginLeft:"30px"}}>
                 <Grid item>
 
-                  <a  href={MyPDF} download="My_File.pdf" style={{listStyle:"none", listStyleType:"none", textDecoration:"none"}} download>
+                  <Link to="./ResumeLautaroS.pdf" target="_blank" download style={{listStyle:"none", listStyleType:"none", textDecoration:"none"}} download>
                   <Button variant="contained" style={{backgroundColor:"#457b9d"}}>
                     Download My Resume
                   </Button>
-                  </a>
+                  </Link>
                 </Grid>
             
               </Grid>

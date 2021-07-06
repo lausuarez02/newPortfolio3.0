@@ -250,7 +250,7 @@ options={{
               <Grid container spacing={2} justify="left" className="resume" style={{marginLeft:"30px"}}>
                 <Grid item>
 
-                  <a  href={MyPDF} download="My_File.pdf" style={{listStyle:"none", listStyleType:"none", textDecoration:"none"}} download>
+                  <a  href={myPDF} download="My_File.pdf" style={{listStyle:"none", listStyleType:"none", textDecoration:"none"}} download>
                   <Button variant="contained" style={{backgroundColor:"#457b9d"}}>
                     Download My Resume
                   </Button>

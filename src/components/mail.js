@@ -152,7 +152,6 @@ const Contact = () => {
 
       const submit = (e) => {
            e.preventDefault()
-
            const dataToSubmit = {
              message,
               email
