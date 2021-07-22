@@ -5,7 +5,9 @@ import {Link} from "react-router-dom"
 import clsx from 'clsx';
 import Typewriter from 'typewriter-effect';
 import HomeIcon from '@material-ui/icons/Home';
+import FaceIcon from '@material-ui/icons/Face';
 import DraftsIcon from '@material-ui/icons/Drafts';
+
 import Drawer from '@material-ui/core/Drawer';
 import React from 'react';
 import Button from '@material-ui/core/Button';
@@ -220,7 +222,7 @@ options={{
   autoStart:true,
   loop:true,
 }}
-/>  
+/>
                </div>
          
             </div>

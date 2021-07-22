@@ -5,12 +5,17 @@ import {Link} from "react-router-dom"
 import clsx from 'clsx';
 import Typewriter from 'typewriter-effect';
 import HomeIcon from '@material-ui/icons/Home';
+import FaceIcon from '@material-ui/icons/Face';
 import DraftsIcon from '@material-ui/icons/Drafts';
+
 import Drawer from '@material-ui/core/Drawer';
 import React from 'react';
+import AppBar from '@material-ui/core/AppBar';
 import Button from '@material-ui/core/Button';
+
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
+
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -220,7 +225,7 @@ options={{
   autoStart:true,
   loop:true,
 }}
-/>  
+/>
                </div>
          
             </div>

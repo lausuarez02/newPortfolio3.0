@@ -5,24 +5,36 @@ import {Link} from "react-router-dom"
 import clsx from 'clsx';
 import Typewriter from 'typewriter-effect';
 import HomeIcon from '@material-ui/icons/Home';
+import FaceIcon from '@material-ui/icons/Face';
 import DraftsIcon from '@material-ui/icons/Drafts';
+
 import Drawer from '@material-ui/core/Drawer';
 import React from 'react';
+import AppBar from '@material-ui/core/AppBar';
 import Button from '@material-ui/core/Button';
+
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
+
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
+
+
 import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
+
+
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+
+import MoreIcon from '@material-ui/icons/MoreVert';
+
 import me from "../images/b8289c2-removebg-preview.png"
 import MyPDF from '../ResumeLautaroS.pdf';
 
@@ -220,7 +232,7 @@ options={{
   autoStart:true,
   loop:true,
 }}
-/>  
+/>
                </div>
          
             </div>

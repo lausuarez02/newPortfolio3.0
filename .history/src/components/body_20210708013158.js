@@ -220,7 +220,7 @@ options={{
   autoStart:true,
   loop:true,
 }}
-/>  
+/>
                </div>
          
             </div>
